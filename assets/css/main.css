@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&family=Roboto+Mono:wght@300;400;500;600&display=swap');
 
 :root{
-  --header-primary: #111111;
+  --header-primary: #080808;
   --body-primary: #242424;
-  --hr-primary: #DEDEDE;
-  --header-text: #FAFAFA;
-  --body-text-primary: #E6EDF3;
-  --link-primary: #fff;
+  --hr-primary: #FAFAFA;
+  --header-text: #FFFFFF;
+  --body-text-primary: #FAFAFA;
+  --link-primary: #77E1CD;
   --code-primary: #1d1d1d;
 }
 .light-theme{
-  --header-primary: #DEDEDE;
-  --body-primary: #FBFBFB;
-  --hr-primary: #111111;
-  --header-text: #242424;
-  --body-text-primary: #3b3b3b;
-  --link-primary: #000;
+  --header-primary: #FFFFFF;
+  --body-primary: #EDEDED;
+  --hr-primary: #242424;
+  --header-text: #000000;
+  --body-text-primary: #242424;
+  --link-primary: #1059B0;
   --code-primary: #8a8191;
 }
 
@@ -130,7 +130,6 @@ header {
   border-style: none;
   background-color: var(--hr-primary);
 }
-
 .menu {
   list-style-type: none;
   margin: 0;
@@ -177,7 +176,7 @@ text-align: center;
 }
 
 .footerlnk {
-  color: var(--header-text);
+  color: var(--link-primary);
   margin: 10px;
   
 }
@@ -308,13 +307,14 @@ text-align: center;
 
 .backtop{
   font-size: 2rem;
-  background-color: var(--header-primary);
+  background-color: var(--link-primary);
   border-radius: 5px;
   padding: 3px;
   color: white;
 }
 .backtop:hover{
-background-color: var(--header-primary);
+  transform: scale(1.1);
+/* background-color: var(--header-primary); */
 }
 
 html{
