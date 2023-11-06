@@ -15,11 +15,11 @@ code.language-plaintext.highlighter-rouge{
 }
 
 :root{
-  --code-primary: #1d1d1d;
+  --code-primary: #121212;
   --highlight-primary: #070508;
 }
 .light-theme{
-  --code-primary: #4e4e4e;
+  --code-primary: #262626;
   --highlight-primary: #c5a6e3;
 }
 

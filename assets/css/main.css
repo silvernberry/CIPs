@@ -7,7 +7,6 @@
   --header-text: #FFFFFF;
   --body-text-primary: #FAFAFA;
   --link-primary: #77E1CD;
-  --code-primary: #1d1d1d;
 }
 .light-theme{
   --header-primary: #FFFFFF;
@@ -16,7 +15,6 @@
   --header-text: #000000;
   --body-text-primary: #242424;
   --link-primary: #1059B0;
-  --code-primary: #8a8191;
 }
 
 body, h1, h2, h3, h4, h5, h6,
@@ -87,14 +85,14 @@ body{
   font-size: 16px/1.2;
   background-color: var(--body-primary);
   color: var(--body-text-primary);
-  
-}
-
-body.site {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
+.wrapper{
+  flex: 1;
+}
+
 
 /* Header */
 
@@ -160,12 +158,14 @@ header {
 
 .footercontainer {
     margin-top: 50px;
+    width: 100% ;
     text-align: center;
     background-color: var(--header-primary);
     padding: 35px 0px;
-}
+    bottom: 0;
+  }
 .footermenu{
-padding-top: 25px;
+padding-top: 5px;
 text-align: center;
 }
 
@@ -221,13 +221,13 @@ text-align: center;
   padding: 5px 10px;
   border-radius: 8px;
   margin-right: 8px;
-  background-color: #AA6FD9;
+  background-color: #60bc38;
   border: none;
   color: white;
   font-size: 14px;
 }
 .sourcebtn:hover{
-  background-color: #9c3aec;
+  background-color: #45a41c;
 }
 
 .rssbtn{
@@ -327,7 +327,7 @@ pre,
   font-family: 'JetBrains Mono', monospace;
    font-size: 15px;
 
-   border: 1px solid #e8e8e8;
+   border: 1px solid var(--hr-primary);
    border-radius: 3px;
  }
  
@@ -574,7 +574,9 @@ justify-content: center;
   .table-container {
     overflow-x: scroll;
   }
-
+  .sitetitle{
+    font-size: 1.85rem;
+  }
 }
 @media (max-width: 425px) {
     .header{
@@ -584,7 +586,6 @@ justify-content: center;
         margin: auto 25px;
     }
 }
-
 
 
 

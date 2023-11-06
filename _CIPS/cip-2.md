@@ -24,9 +24,13 @@ interface-address: 6146ccf6a66d994f7c363db875e31ca35581450a4bf6d3be6cc9ac79233a6
 Currently, the formula to compute the difficulty of a block includes the following logic:
 
 ``` python
-adj_factor = max(1 - ((timestamp - parent.timestamp) // 10), -99)
-child_diff = int(max(parent.difficulty + (parent.difficulty // BLOCK_DIFF_FACTOR) * adj_factor, min(parent.difficulty, MIN_DIFF)))
-...
+my_list = [1, 2, 3, 4, 5]
+element_to_check = 3
+
+if element_to_check in my_list:
+    print(f"{element_to_check} exists in the list.")
+else:
+    print(f"{element_to_check} does not exist in the list.")
 ```
 
 If `block.number >= BYZANTIUM_FORK_BLKNUM`, we change the first line to the following:
